@@ -10,7 +10,7 @@ app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}))
 
 app.get("/", function(req,res){
-    res.sendFile(__dirname + "/signup.html")
+    res.sendFile(__dirname + "/index.html")
 })
 
 app.post("/",function(req,res){
@@ -38,7 +38,7 @@ app.post("/",function(req,res){
 
     const options={
         method:"POST",
-        auth: "lokesh1:b6c09b3d51da1838db5b4e5ed0625ecf-us21"
+        auth: "lokesh1:1e30950d8faaee67e51fd05f55fa9aab-us21"
     }
 
     const request=https.request(url,options,function(response){
